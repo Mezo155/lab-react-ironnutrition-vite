@@ -31,22 +31,34 @@ return (
         <label htmlFor="name">Name</label>
         <input 
             type="text"
-            name="name">
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            >
         </input>
         <label htmlFor="image">Image</label>
         <input 
             type="text"
-            name="image">
+            name="image"
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+            >
         </input>
         <label htmlFor="calories">Calories</label>
         <input 
             type="number"
-            name="calories">
+            name="calories"
+            value={calories}
+            onChange={(e) => setCalories(e.target.value)}
+            >
         </input>
         <label htmlFor="servings">Servings</label>
         <input 
             type="number"
-            name="servings">
+            name="servings"
+            value={servings}
+            onChange={(e) => setServings(e.target.value)}
+            >
         </input>
         
         <button type="submit">Create</button>
